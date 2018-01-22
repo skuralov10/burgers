@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,16 +10,106 @@
 </head>
 <body>
     <div class="wrapper">
-        <header class="header">
+        <section class="hero">
             <div class="container">
-                <div class="logo"></div>
-                <nav class="nav"></nav>
+                <header class="header">
+                    <div class="logo">
+                        <a href="#"><img src="/img/logo/logo.png" alt="logo"></a>
+                    </div>
+                    <nav class="nav">
+                        <ul class="nav__list">
+                            <li class="nav__item"><a href="#" class="nav__link">о нас</a></li>
+                            <li class="nav__item"><a href="#" class="nav__link">бургеры</a></li>
+                            <li class="nav__item"><a href="#" class="nav__link">команда</a></li>
+                            <li class="nav__item"><a href="#" class="nav__link">меню</a></li>
+                            <li class="nav__item"><a href="#" class="nav__link">отзывы</a></li>
+                            <li class="nav__item"><a href="#" class="nav__link">контакты</a></li>
+                        </ul>
+                    </nav>
+                    <div class="order_btn">
+                        <a href="#" class="order__link">Заказать</a>
+                    </div>
+                </header>
+                <div class="hero__content">
+                    <div class="hero__img">
+                        <img src="/img/content/burgers.png" alt="burgers">
+                    </div>
+                    <div class="hero__desc">
+                        <h2 class="section__title">Мы делаем</h2>
+                        <div class="hero__desc-text">натуральные бургеры</div>
+                    </div>
+                </div>
             </div>
-        </header>
-        <h1>Burgers</h1>
+        </section>
+        
+        <aside>
+            <nav class="nav-bar"></nav>
+            <ul class="nav-bar__list">
+                <li class="nav-bar__item"><a href="#" class="nav-bar__link"></a></li>
+                <li class="nav-bar__item"><a href="#" class="nav-bar__link"></a></li>
+                <li class="nav-bar__item"><a href="#" class="nav-bar__link"></a></li>
+                <li class="nav-bar__item"><a href="#" class="nav-bar__link"></a></li>
+                <li class="nav-bar__item"><a href="#" class="nav-bar__link"></a></li>
+                <li class="nav-bar__item"><a href="#" class="nav-bar__link"></a></li>
+                <li class="nav-bar__item"><a href="#" class="nav-bar__link"></a></li>
+                <li class="nav-bar__item"><a href="#" class="nav-bar__link"></a></li>
+            </ul>
+        </aside>
+
+        <div class="arrow-down">
+            <a href="#" class="arrow-down__link"></a>
+        </div>
+
+        <section class="best">
+            <div class="container">
+                <h2 class="section__title section__title_best">Мы лучшие</h2>
+                <ul class="best__list">
+                    <li class="best__item">
+                        <div class="best__icon best__icon_meat"></div>
+                        <div class="best__title">100% свежее мясо</div>
+                        <div class="best__info">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Ямб неравномерен.</div>
+                    </li>
+                    <li class="best__item">
+                        <div class="best__icon best__icon_hand"></div>
+                        <div class="best__title">Ручная  сборка</div>
+                        <div class="best__info">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест. Первое полустишие притягивает сюжетный реформаторский пафос.</div>
+                    </li>
+                    <li class="best__item">
+                        <div class="best__icon best__icon_natural"></div>
+                        <div class="best__title">Натуральные ингредиенты</div>
+                        <div class="best__info">Драма представляет собой деструктивный цикл. Анапест представляет собой анапест.</div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="reviews">
+            <div class="container">
+                <ul class="reviews__list">
+                    <li class="reviews__item reviews__item_client1">
+                        <div class="reviews__inner">
+                            <div class="reviews__inner_title">Константин Спилберг</div>
+                            <div class="reviews__inner_text">Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть... Никогда не думал, что булочки могут быть такими мягкими, котлетка такой сочной, а сыр таким расплавленным.</div>
+                            <div class="reviews__inner_btn">
+                                <a href="#" class="reviews__inner_link">Подробнее</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="reviews__item reviews__item_client2"></li>
+                    <li class="reviews__item reviews__item_client3"></li>
+                    <li class="reviews__item reviews__item_client4"></li>
+                    <li class="reviews__item reviews__item_client5"></li>
+                    <li class="reviews__item reviews__item_client6"></li>
+                    <li class="reviews__item reviews__item_client7"></li>
+                    <li class="reviews__item reviews__item_client8"></li>
+                </ul>
+            </div>
+        </section>
+
     </div>
+
     <footer class="footer">
 
-    </footer>    
+    </footer>
 </body>
 </html>

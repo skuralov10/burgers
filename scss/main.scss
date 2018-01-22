@@ -1,0 +1,12 @@
+//config
+@import "config/mixins.scss";
+
+// base
+@import "layout/normalize.scss";
+@import "layout/fonts.scss";
+@import "layout/base.scss";
+
+//blocks
+@import "section/hero.scss";
+@import "section/best.scss";
+@import "section/reviews.scss";
