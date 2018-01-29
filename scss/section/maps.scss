@@ -3,4 +3,69 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-}    
+    position: relative;
+}
+
+.footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: $black;
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 80px;
+}
+
+.footer__left {
+    width: 50%;
+}
+
+.footer__right {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contacts {
+    color: #ffffff;
+    font-family: 'ubuntulight';
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 24px;
+}
+
+.contacts__phone {
+    color: #e45028;
+    font-family: 'ubuntubold';
+    font-weight: normal;
+    // background-image: url('../../img/icons/phone.svg');
+    // background-position: center;
+    // background-repeat: no-repeat;
+}
+
+.social__list {
+    display: flex;
+    flex-direction: row;
+}
+
+.social__item {
+    margin-right: 20px;
+}
+
+.social__icon {
+    width: 23px;
+    height: 20px;
+    opacity: 0.3;
+    fill: #ffffff;
+
+    &:hover {
+        opacity: 1;
+    }
+    
+    &_active {
+        opacity: 1;
+    }
+}

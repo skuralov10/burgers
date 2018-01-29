@@ -1,11 +1,11 @@
 .nav-bar__list {
     position: fixed;
-    top: 20px;
-    right: 20px;
+    top: 95px;
+    right: 166px;
 }
 
 .nav-bar__item {
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .nav-bar__link {
@@ -17,6 +17,10 @@
     align-items: center;
     justify-content: center;
     position: relative;
+
+    &_active {
+        border-color: #ffffff;
+    }
 
     &:hover {
         border-color: #ffffff;

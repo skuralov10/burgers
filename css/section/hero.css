@@ -1,19 +1,94 @@
-.section__hero {
-  background-image: url("../../img/bg/hero_bg.png");
+.hero {
+  background-image: url("../../img/bg/hero.png");
+  background-position: center;
   background-repeat: no-repeat;
-  background-position: 50%;
-  background-size: cover; }
+  background-size: cover;
+  background-color: #fff;
+  padding-top: 20px; }
+
+.hero__container {
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start; }
 
 .header {
-  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between;
+  justify-content: space-between; }
+
+.header__btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center; }
+
+.nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.nav {
+  color: #ffffff;
+  font-family: 'ubuntumedium';
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 30px;
+  text-transform: uppercase;
+  margin-right: 15px; }
+
+.nav__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  .nav__item:last-child:after {
+    display: none; }
+
+.nav__link {
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s; }
+  .nav__link:hover {
+    text-decoration: underline; }
+
+.hero__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: .8;
+  -ms-flex: .8;
+  flex: .8;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-bottom: 15%; }
+
+.hero__pic {
+  width: 50%; }
+
+.hero__desc {
+  width: 50%; }
+
+.hero__desc-text {
+  color: #ffffff;
+  font-family: 'lifehackmedium';
+  font-size: 65px;
+  font-weight: 500; }
 
 /*# sourceMappingURL=hero.css.map */

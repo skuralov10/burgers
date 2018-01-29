@@ -11,11 +11,24 @@
     font-size: 14px;
     font-weight: normal;
     line-height: 24px;
+
+    display: flex;
+    margin-top: 32px;
+}
+
+.form__left {
+    width: 50%;
+    margin-right: 20px;
+
+}
+
+.form__right {
+    width: 50%;
 }
 
 .form__row  {
     display: flex;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .form__block {
@@ -34,4 +47,22 @@
     border: none;
     background-color: #ffffff;
     border-radius: 5px;
+}
+
+.form__textarea {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.form__block_row {
+    display: flex;
+    align-items: center;
+}
+
+.form__radio {
+    margin-right: 10px;
+}
+
+.form__checkbox {
+    margin-right: 10px;
 }

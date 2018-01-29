@@ -3,4 +3,58 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    position: relative;
+}
+
+.menu__content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 40%;
+    display: flex;
+    align-items: center;
+}
+
+.menu-accordeon {
+    display: flex;
+}
+
+.menu-accordeon_item {
+    display: flex;
+
+    &-active {
+        color: #fff;
+    }
+
+    .menu-accordeon_info {
+        width: 100%;
+    }
+}
+
+.menu-accordeon_trigger {
+    transform: rotate(-90deg);
+    display: flex;
+    width: auto;
+    color: #fff;
+    font-size: 20px;
+
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.menu-accordeon_trigger-meat {
+    background-image: url('../../img/bg/menu_meat.png');
+}
+
+.menu-accordeon_trigger-vegan {
+    background-image: url('../../img/bg/menu_vegan.png');
+}
+.menu-accordeon_trigger-dieta {
+    background-image: url('../../img/bg/menu_dieta.png');
+}
+
+.menu-accordeon_info {
+    width: 0;
+    background-color: $black;
 }
