@@ -1,0 +1,16 @@
+.arrow-down {
+    display: flex;
+    justify-content: center;
+
+}
+
+.arrow-down__icon {
+    transform: translate(0, -45px);
+    width: 29px;
+    height: 14px;
+    fill: #fff;
+
+    &:hover {
+        transform: translate(0, -40px);
+    }
+}

@@ -1,0 +1,71 @@
+.team {
+    background-image: url('../../img/bg/team.png'); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.team__container {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 50%;
+    background-color: #2f3234;
+    opacity: 0.93;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.team__content {
+    width: 70%;
+}
+
+.team-acco__item-active {
+    .team-acco__trigger {
+        color: $yellow;
+
+        &:before {
+            transform: rotate(180deg);
+        }
+    }
+    .team-acco__content {
+        display: flex;
+        height: auto;
+    }
+}
+
+.team-acco__trigger {
+    color: #ffffff;
+    font-family: 'gagalinregular';
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 28.13px;
+    display: flex;
+
+    &:before {
+        content: "";
+        display: block;
+        height: 0;
+        width: 0;
+        border: 9px solid transparent;
+        border-top-color: $yellow;
+        border-bottom-width: 0px;
+    }    
+}
+
+.team-acco__content {
+    // display: none;
+    height: 0;
+    overflow: hidden
+}
+
+.team-acco__text {
+    color: #ffffff;
+    font-family: 'ubuntulight';
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 24.01px;
+}

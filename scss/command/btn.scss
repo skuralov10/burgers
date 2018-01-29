@@ -1,0 +1,11 @@
+.btn {
+    padding: 10px 15px;
+    background-color: $orange;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    &:hover {
+        background-color: $red;
+    }
+  }

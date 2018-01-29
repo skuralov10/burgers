@@ -1,23 +1,22 @@
 .best {
-    background-image: url('../../img/bg/best_bg.png'); 
-    width: 100%;
-    height: 100%;
-    min-height: 650px;
+    background-image: url('../../img/bg/best.png'); 
+    // width: 100%;
+    // height: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: #fff;
+    // background-color: #fff;
 }
 
-.section__title_best {
-    color: #2f3234;
-    font-family: 'gagalinregular';
-    font-size: 72px;
-    font-weight: normal;
-    padding-top: 133px;
-    display: flex;
-    justify-content: center;
-}
+// .section__title_best {
+//     color: #2f3234;
+//     font-family: 'gagalinregular';
+//     font-size: 72px;
+//     font-weight: normal;
+//     padding-top: 133px;
+//     display: flex;
+//     justify-content: center;
+// }
 
 .best__list {
     display: flex;
@@ -26,28 +25,35 @@
 }
 
 .best__item {
-    width: 285px;
-    text-align: center;
+    // width: 285px;
+    width: 30%;
+    // text-align: center;
 }
 
 .best__icon {
+    display: flex;
+    justify-content: center;
+}
+
+.best__icon_pic {
     width: 100px;
-    height: 100px;
-    margin: 0 auto;
-    background-position: center;
-    background-repeat: no-repeat;
+    height: 90px;
 }
 
 .best__icon_meat {
-    background-image: url('../../img/icons/meat.png');
+    fill: rgb(226,80,40);
 }
 
 .best__icon_hand {
-    background-image: url('../../img/icons/hand.png');
+    fill: rgb(248,180,58);
 }
 
 .best__icon_natural {
-    background-image: url('../../img/icons/natural.png');
+    fill: rgb(138,192,62);
+}
+
+.best__desc {
+    text-align: center;
 }
 
 .best__title {
@@ -68,3 +74,4 @@
     line-height: 24.02px;
     margin-top: 25px;
 }
+

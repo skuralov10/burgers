@@ -1,0 +1,13 @@
+.arrow-down {
+  -webkit-transform: translate(0, -20px);
+  -ms-transform: translate(0, -20px);
+  transform: translate(0, -20px);
+  width: 29px;
+  height: 14px;
+  background-color: red; }
+  .arrow-down:hover {
+    -webkit-transform: translate(0, -15px);
+    -ms-transform: translate(0, -15px);
+    transform: translate(0, -15px); }
+
+/*# sourceMappingURL=arrow-down.css.map */

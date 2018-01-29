@@ -22,12 +22,22 @@ html {
 body {
     height: 100%;
     width: 100%;
+    line-height: 1.42;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
-ol, ul, li {
-    list-style: none;
+ul {
+    padding: 0;
+    margin: 0;
+    li {
+      list-style: none;
+    }
+}
+
+p {
+    padding: 0;
+    margin: 0;
 }
 
 table {
@@ -48,13 +58,15 @@ a {
     background: transparent;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
 
 .wrapper {
     overflow: hidden;
-    min-width: 1140px;
+    width: 100%;
+    // min-width: 1100px;
+    min-width: 940px + 20px;
     min-height: 100%;
 }
 
@@ -65,12 +77,25 @@ h1, h2, h3 {
 }
 
 .container {
-    width: 1100px;
+    width: 940px;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .clearfix:after {
     content: "";
     display: block;
     clear: both;
+}
+
+footer {
+    position: relative;
+    width: 100%;
+}
+
+.section {
+    height: 100vh;
+    min-height: 650px;
 }
