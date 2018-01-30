@@ -11,44 +11,80 @@
     top: 0;
     right: 0;
     bottom: 0;
-    height: 100%;
     display: flex;
 }
 
-.menu-accordeon_item {
+.menu-accordeon__item {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    border: 1px solid black;
-    width: 80px;
+    height: 100%;
     cursor: pointer;
 
-    &:hover .menu-accordeon_trigger {
+    &:hover .menu-accordeon__trigger {
         color: $yellow;
-    }
-
-    .menu-accordeon__info {
-        display: flex;
-        width: auto;
     }
 }
 
-.menu-accordeon_item-meat {
+.menu-accordeon__item-meat {
     background-image: url('../../img/bg/menu_meat.png'); 
 }
 
-.menu-accordeon_item-vegan {
+.menu-accordeon__item-vegan {
     background-image: url('../../img/bg/menu_vegan.png'); 
 }
 
-.menu-accordeon_item-dieta {
+.menu-accordeon__item-dieta {
     background-image: url('../../img/bg/menu_dieta.png'); 
 }
 
-.menu-accordeon_trigger {
+.menu-accordeon__trigger {
     color: #ffffff;
     font-family: 'gagalinregular';
     font-size: 40px;
     font-weight: normal;
     line-height: 63.75px;
+    width: 80px;
+    display: block;
+    height: 100%;
+    float: left;
+    position: relative;
+}
+
+.menu-accordeon__trigger-title {
+    white-space: nowrap;
+    position: absolute;
+    transform: rotate(-90deg) translateY(-50%);
+    transform-origin: 0 0;
+    left: 50%;
+    top: 100%;
+    margin-top: -30px;
+    text-align: center;
+}
+
+.menu-accordeon__content {
+	height: 100%;
+	// float: left;
+	background: rgba(#2f3234, .93);
+	width: 0;
+	overflow: hidden;
+}
+
+.menu-accordeon__text {
+	font-size: 14px;
+	color: #fff;
+	padding: 60px 30px;
+	width: 100%;
+    line-height: 1.8;
+    display: none;
+}
+
+.menu-accordeon__item-active {
+
+    .menu-accordeon__content{
+        width: 500px;
+    }
+    .menu-accordeon__text {
+        display: block;
+    }   
 }
