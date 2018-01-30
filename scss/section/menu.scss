@@ -6,55 +6,49 @@
     position: relative;
 }
 
-.menu__content {
+.menu-accordeon {
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
-    left: 40%;
-    display: flex;
-    align-items: center;
-}
-
-.menu-accordeon {
+    height: 100%;
     display: flex;
 }
 
 .menu-accordeon_item {
-    display: flex;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid black;
+    width: 80px;
+    cursor: pointer;
 
-    &-active {
-        color: #fff;
+    &:hover .menu-accordeon_trigger {
+        color: $yellow;
     }
 
-    .menu-accordeon_info {
-        width: 100%;
+    .menu-accordeon__info {
+        display: flex;
+        width: auto;
     }
+}
+
+.menu-accordeon_item-meat {
+    background-image: url('../../img/bg/menu_meat.png'); 
+}
+
+.menu-accordeon_item-vegan {
+    background-image: url('../../img/bg/menu_vegan.png'); 
+}
+
+.menu-accordeon_item-dieta {
+    background-image: url('../../img/bg/menu_dieta.png'); 
 }
 
 .menu-accordeon_trigger {
-    transform: rotate(-90deg);
-    display: flex;
-    width: auto;
-    color: #fff;
-    font-size: 20px;
-
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.menu-accordeon_trigger-meat {
-    background-image: url('../../img/bg/menu_meat.png');
-}
-
-.menu-accordeon_trigger-vegan {
-    background-image: url('../../img/bg/menu_vegan.png');
-}
-.menu-accordeon_trigger-dieta {
-    background-image: url('../../img/bg/menu_dieta.png');
-}
-
-.menu-accordeon_info {
-    width: 0;
-    background-color: $black;
+    color: #ffffff;
+    font-family: 'gagalinregular';
+    font-size: 40px;
+    font-weight: normal;
+    line-height: 63.75px;
 }
