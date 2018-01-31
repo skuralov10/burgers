@@ -4,8 +4,17 @@ $yellow: #f9b43b;
 $black: #2f3234;
 $red: #c1401e;
 
+//resolutions
+$desktop: 1200px;
+$laptop: 992px;
+$tablets: 768px;
+$phones: 480px;
+
 //config
 @import "config/mixins.scss";
+
+//media
+@import "config/media.scss";
 
 // base
 @import "layout/normalize.scss";

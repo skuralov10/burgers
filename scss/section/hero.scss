@@ -4,7 +4,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-color: #fff;
-    padding-top: 12px;
+    padding-top: rem(12px);
 }
 
 .hero__container {
@@ -30,11 +30,15 @@
 .nav {
     color: #ffffff;
     font-family: 'ubuntumedium';
-    font-size: 13px;
+    font-size: rem(13px);
     font-weight: normal;
-    line-height: 30px;
+    line-height: rem(30px);
     text-transform: uppercase;
-    margin-right: 15px;       
+    margin-right: rem(15px);
+    
+    @include tablets {
+        display: none;
+    }
 }
 
 .nav__item {
@@ -43,8 +47,8 @@
 
     &:after {
         content: "";
-        @include circle(5px, #fff);
-        margin: 0 12px;
+        @include circle(rem(5px), #fff);
+        margin: 0 rem(12px);
     }
 
     &:last-child:after {
@@ -60,32 +64,68 @@
     }
 }
 
+.hamburger-menu__link {
+    display: none;
+
+    @include tablets {
+        display: flex;
+    }
+}
+
 .hero__content {
     display: flex;
     flex: .8;
     align-items: center;
     justify-content: center;
-    
+
+    @include tablets {
+        flex-direction: column;
+        align-items: center;
+    }    
 }
 
 .hero__pic {
     // flex-basis: 50%;
     width: 50%;
-    margin-top: -10px;
-    margin-left: 24px;
+    margin-top: rem(0px);
+    margin-left: rem(0px);
+
+    @include tablets {
+        margin-top: rem(0px);
+        margin-left: rem(0px);
+    }
+
+    @include phones {
+        width: 90%;
+    }
 }
 
 .hero__desc {
     width: 50%;
     // flex-basis: 50%;
-    margin-top: 107px;
-    margin-left: 9px;
+    margin-top: rem(107px);
+    margin-left: rem(9px);
+
+    @include tablets {
+        margin-top: rem(0px);
+        margin-left: rem(0px);
+        text-align: center;
+    }
+
+    @include phones {
+        width: 90%;
+    }
 }
 
 .hero__desc-text {
     color: #ffffff;
     font-family: 'lifehackmedium';
-    font-size: 65px;
+    font-size: rem(65px);
     font-weight: 500;
-    letter-spacing: -1.63px;
+    letter-spacing: rem(-1.63px);
+    line-height: rem(60px);
+
+    @include phones {
+        font-size: rem(54px);
+    }
 }

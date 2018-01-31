@@ -28,6 +28,11 @@
                                 </ul>
                             </nav>
                             <a href="#" class="btn">Заказать</a>
+                            <a href="#" class="hamburger-menu__link">
+                                <div class="hamburger-menu__link_bars">
+                                    <img src="./img/icons/hamburger-menu.png" alt="hamburger-menu">
+                                </div>
+                            </a>
                         </div>                        
                     </header>
                     <div class="hero__content">
@@ -106,7 +111,7 @@
             <section class="section team">
                 <div class="team__container">
                     <div class="team__content">
-                        <h2 class="section__title">Команда</h2>
+                        <h2 class="section__title section__title_align_center">Команда</h2>
                         <ul class="team-accordeon">
                             <li class="team-accordeon__item">
                                 <a href="#" class="team-accordeon__trigger">Дэниел Редклифф</a>                            
@@ -354,7 +359,6 @@
                             </div>
                             <div class="form__row">
                                 <a href="#" class="btn">Заказать</a>
-                                <!-- <a href="#" class="btn__reset">Очистить</a> -->
                                 <button type="reset" class="btn__reset">Очистить</button>
                             </div>
                         </div>
@@ -367,7 +371,12 @@
                         <div class="footer__left">
                             <div class="contacts">
                                 <div class="contacts__address">Санкт-Петербург, ул.Бабушкина, д.12/1, 15</div>
-                                <a href="tel:+78123771377" class="contacts__phone">+7 (812) 377-13-77</a>
+                                <a href="tel:+78123771377" class="contacts__phone">
+                                    <svg class="contacts__phone_icon">
+                                        <use xlink:href="./img/icons/sprite.svg#phone"></use>
+                                    </svg>
+                                    <div class="contacts__number">+7 (812) 377-13-77</div>
+                                </a>
                             </div>
                         </div>
                         <div class="footer__right">

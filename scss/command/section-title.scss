@@ -1,9 +1,13 @@
 .section__title {
     color: $yellow;
     font-family: 'gagalinregular';
-    font-size: 72px;
+    font-size: rem(72px);
     font-weight: normal;
-    line-height: 85px;
+    line-height: rem(85px);
+
+    @include phones {
+        font-size: rem(63px);
+    }
 }
 
 .section__title_color_black {
@@ -12,11 +16,15 @@
 
 .section__title_color_white {
     color: #ffffff;
-    padding-left: 90px;
-    padding-top: 90px;
+    padding-left: rem(50px);
+    padding-top: rem(40px);
 }
 
 .section__title_align_center {
     text-align: center;
-    margin-top: 124px;
+    margin-top: rem(124px);
+
+    @include phones {
+        margin-top: rem(80px);
+    }
 }

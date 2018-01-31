@@ -54,11 +54,11 @@ h1, h2, h3, h4, h5, h6 {
 .wrapper {
   overflow: hidden;
   width: 100%;
-  min-width: 960px;
+  min-width: rem(940px)rem(20px);
   min-height: 100%; }
 
 .container {
-  width: 940px;
+  width: rem(940px);
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -82,6 +82,6 @@ footer {
 
 .section {
   height: 100vh;
-  min-height: 650px; }
+  min-height: rem(650px); }
 
 /*# sourceMappingURL=base.css.map */

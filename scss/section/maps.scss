@@ -13,13 +13,22 @@
     bottom: 0;
     background-color: $black;
     display: flex;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 80px;
+    padding-top: rem(10px);
+    padding-bottom: rem(10px);
+    padding-left: rem(80px);
+
+    @include phones {
+        flex-direction: column;
+        text-align: center;
+    }
 }
 
 .footer__left {
     width: 50%;
+
+    @include phones {
+        width: 100%;
+    }
 }
 
 .footer__right {
@@ -27,23 +36,34 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @include phones {
+        width: 100%;
+    }
 }
 
 .contacts {
     color: #ffffff;
     font-family: 'ubuntulight';
-    font-size: 14px;
+    font-size: rem(14px);
     font-weight: normal;
-    line-height: 24px;
+    line-height: rem(24px);
 }
 
 .contacts__phone {
     color: #e45028;
     font-family: 'ubuntubold';
     font-weight: normal;
-    // background-image: url('../../img/icons/phone.svg');
-    // background-position: center;
-    // background-repeat: no-repeat;
+}
+
+.contacts__phone_icon {
+    width: rem(12px);
+    height: rem(11px);
+    fill: #e45028;
+}
+
+.contacts__number {
+    display: inline-block;
 }
 
 .social__list {
@@ -52,12 +72,12 @@
 }
 
 .social__item {
-    margin-right: 20px;
+    margin-right: rem(20px);
 }
 
 .social__icon {
-    width: 23px;
-    height: 20px;
+    width: rem(23px);
+    height: rem(20px);
     opacity: 0.3;
     fill: #ffffff;
 

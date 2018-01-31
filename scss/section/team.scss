@@ -3,7 +3,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    position: relative;
+    position: relative;    
 }
 
 .team__container {
@@ -17,6 +17,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @include tablets {
+        width: 100%;
+        flex-direction: column;
+        
+    }
 }
 
 .team__content {
@@ -24,11 +30,15 @@
 }
 
 .team-accordeon {
-    margin-top: 46px;    
+    margin-top: rem(46px);    
 }
 
 .team-accordeon__item {
-    margin-bottom: 35px;
+    margin-bottom: rem(35px);
+
+    @include tablets {
+        text-align: center;
+    }
 }
 
 .team-accordeon__item-active {
@@ -48,19 +58,23 @@
 .team-accordeon__trigger {
     color: #ffffff;
     font-family: 'gagalinregular';
-    font-size: 14px;
+    font-size: rem(14px);
     font-weight: normal;
-    line-height: 28.13px;
-    display: flex;
+    line-height: rem(28.13px);
+    display: block;
+
+    @include tablets {
+        display: inline-block;
+    }
 
     &:before {
         content: "";
         display: block;
         height: 0;
         width: 0;
-        border: 9px solid transparent;
+        border: rem(9px) solid transparent;
         border-top-color: $yellow;
-        border-bottom-width: 0px;
+        border-bottom-width: rem(0px);
     }    
 }
 
@@ -68,24 +82,29 @@
     // display: none;
     height: 0;
     overflow: hidden;
-    margin-top: 17px;
+    margin-top: rem(17px);
+
+    @include tablets {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .team-accordeon__img {
-    margin-right: 21px;
+    margin-right: rem(21px);
 }
 
 .team-accordeon__text {
     color: #ffffff;
     font-family: 'ubuntulight';
-    font-size: 14px;
+    font-size: rem(14px);
     font-weight: normal;
-    line-height: 24.01px;
-    width: 208px;
+    line-height: rem(24.01px);
+    width: rem(208px);
 }
 
 .team-accordeon__article-title {
     font-family: 'ubuntubold';
     font-weight: normal;
-    margin-bottom: 15px;
+    margin-bottom: rem(15px);
 }

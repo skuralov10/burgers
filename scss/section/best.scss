@@ -8,12 +8,21 @@
 .best__list {
     display: flex;
     justify-content: space-between;
-    margin-top: 40px;
-    margin-left: 18px;
+    margin-top: rem(40px);
+    margin-left: rem(18px);
+    
+    @include phones {
+        flex-direction: column;
+    }
 }
 
 .best__item {
     width: 30%;
+
+    @include phones {
+        display: flex;
+        width: 100%;
+    }
 }
 
 .best__icon {
@@ -22,8 +31,8 @@
 }
 
 .best__icon_pic {
-    width: 100px;
-    height: 90px;
+    width: rem(100px);
+    height: rem(90px);
 }
 
 .best__icon_meat {
@@ -40,23 +49,27 @@
 
 .best__desc {
     text-align: center;
+
+    @include phones {
+        text-align: left;
+    }
 }
 
 .best__title {
     color: #2f3234;
     font-family: 'lifehackmedium';
-    font-size: 24px;
+    font-size: rem(24px);
     font-weight: 500;
-    line-height: 28.14px;
-    margin-top: 27px;
+    line-height: rem(28.14px);
+    margin-top: rem(27px);
 }
 
 .best__info {
     opacity: 0.8;
     color: #2f3234;
     font-family: 'ubuntulight';
-    font-size: 14px;
+    font-size: rem(14px);
     font-weight: normal;
-    line-height: 24.02px;
-    margin-top: 17px;
+    line-height: rem(24.02px);
+    margin-top: rem(17px);
 }

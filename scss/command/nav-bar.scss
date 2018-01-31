@@ -1,17 +1,17 @@
 .nav-bar__list {
     position: fixed;
-    top: 95px;
-    right: 166px;
+    top: rem(95px);
+    right: rem(50px);
 }
 
 .nav-bar__item {
-    margin-bottom: 5px;
+    margin-bottom: rem(5px);
 }
 
 .nav-bar__link {
-    width: 16px;
-    height: 16px;
-    border: 1px solid transparent;
+    width: rem(16px);
+    height: rem(16px);
+    border: rem(1px) solid transparent;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -29,8 +29,8 @@
     &:before {
         content: "";
         display: block;
-        width: 5px;
-        height: 5px;
+        width: rem(5px);
+        height: rem(5px);
         border-radius: 50%;
         background-color: #fff;
         position: absolute;
