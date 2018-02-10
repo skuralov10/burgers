@@ -3,6 +3,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
 }
 
 .form {
@@ -36,7 +37,7 @@
 
     @include tablets {
         width: 65%;
-    }
+    }   
 }
 
 .form__row  {
@@ -62,6 +63,10 @@
     border-radius: rem(5px);
 }
 
+.form__row_right {
+    margin-bottom: rem(5px);
+}
+
 .form__textarea {
     width: 100%;
     border-radius: rem(5px);
@@ -70,12 +75,63 @@
 .form__block_row {
     display: flex;
     align-items: center;
+    max-width: rem(150px);
 }
 
 .form__radio {
-    margin-right: rem(10px);
+    margin-right: rem(12px);
+    display: none;
+}
+
+.form__radio_custom {
+    width: rem(15px);
+    height: rem(15px);
+    background-color: #ffffff;
+	border-radius: rem(50px);
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: rem(12px);
+}
+
+.form__radio:checked + .form__radio_custom::before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: rem(4px);
+	right: rem(4px);
+	bottom: rem(4px);
+    left: rem(4px);
+    border-radius: 50%;
+    background-color: #e35028;
+}
+
+.form__radio_custom, .form__radio:checked + .form__radio_custom::before {
+	border-radius: 50%;
 }
 
 .form__checkbox {
     margin-right: rem(10px);
+    display: none;
+}
+
+.form__checkbox_custom {
+	width: rem(15px);
+    height: rem(15px);
+    background-color: #ffffff;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: rem(10px);
+}
+
+.form__checkbox:checked + .form__checkbox_custom::before {
+	content: "";
+	display: block;
+    position: absolute;
+    background-image: url('../../img/icons/galochka.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    width: rem(15px);
+    height: rem(15px);
 }

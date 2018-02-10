@@ -26,15 +26,15 @@
     }
 }
 
-.menu-accordeon__item-meat {
+.menu-accordeon__item_meat {
     background-image: url('../../img/bg/menu_meat.png'); 
 }
 
-.menu-accordeon__item-vegan {
+.menu-accordeon__item_vegan {
     background-image: url('../../img/bg/menu_vegan.png'); 
 }
 
-.menu-accordeon__item-dieta {
+.menu-accordeon__item_dieta {
     background-image: url('../../img/bg/menu_dieta.png'); 
 }
 
@@ -79,7 +79,7 @@
     display: none;
 }
 
-// .menu-accordeon__item-active {
+// .menu-accordeon__item_active {
 
 //     .menu-accordeon__content{
 //         width: rem(500px);

@@ -1,25 +1,15 @@
 .arrow-down {
     display: flex;
-    justify-content: center;
-    padding-top: rem(134px);
-    padding-left: rem(13px);
-
-    @include tablets {
-        padding-top: rem(70px);
-    }
-
-    @include phones {
-        padding-top: rem(110px);
-    }
+    justify-content: center;    
 }
 
 .arrow-down__icon {
-    transform: translate(0, rem(-45px));
+    transform: translate(0, rem(90px));
     width: rem(29px);
     height: rem(14px);
     fill: #fff;   
 
     &:hover {
-        transform: translate(0, rem(-40px));
+        transform: translate(0, rem(95px));
     }
 }

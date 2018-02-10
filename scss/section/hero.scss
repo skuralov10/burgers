@@ -5,6 +5,7 @@
     background-size: cover;
     background-color: #fff;
     padding-top: rem(12px);
+    display: flex;
 }
 
 .hero__container {
@@ -64,12 +65,20 @@
     }
 }
 
-.hamburger-menu__link {
+.hamburger-menu {
     display: none;
 
     @include tablets {
-        display: flex;
+        display: inline-block;
     }
+}
+
+.hamburger-menu__bars {
+    width: 24px;
+    height: 4px;
+    border-radius: 50px;
+    background-color: #ffffff;
+    margin-bottom: 3px;
 }
 
 .hero__content {

@@ -22,9 +22,9 @@
 
 .section__title_align_center {
     text-align: center;
-    margin-top: rem(124px);
+    padding-top: rem(40px);
 
     @include phones {
-        margin-top: rem(80px);
+        padding-top: rem(80px);
     }
 }
