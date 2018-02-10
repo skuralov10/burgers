@@ -566,7 +566,6 @@ footer {
 
 .section__title_color_white {
   color: #ffffff;
-  padding-left: 3.125rem;
   padding-top: 2.5rem; }
 
 .section__title_align_center {
@@ -873,7 +872,161 @@ footer {
   background-image: url("../../img/bg/burgers.png");
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.burgers__container {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.burgers__arrow-left {
+  position: absolute;
+  left: -50px;
+  top: 50%;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg); }
+
+.burgers__arrow-icon {
+  width: 25px;
+  height: 25px;
+  fill: #fff; }
+  .burgers__arrow-icon:hover {
+    fill: red; }
+
+.burgers__arrow-right {
+  position: absolute;
+  right: -10px;
+  top: 50%;
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg); }
+
+.burgers__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.burgers__consist {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 90px;
+  height: 90px;
+  border-radius: 10px;
+  background-color: #e35028;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  cursor: pointer; }
+  .burgers__consist:hover {
+    background-color: #c1401e; }
+  .burgers__consist:hover .burgers__consist_wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    left: 90px; }
+
+.burgers__consist_wrap {
+  display: none;
+  position: absolute;
+  border-radius: 10px;
+  background-color: #fff;
+  top: 0;
+  min-width: 265px; }
+
+.burgers__consist_img {
+  padding-left: 10px;
+  padding-top: 10px; }
+
+.burgers__consist_icon {
+  width: 50px;
+  height: 50px; }
+
+.burgers__consist_beef {
+  fill: #c1401e; }
+
+.burgers__consist_buns {
+  fill: #f9b43b; }
+
+.burgers__consist_salad {
+  fill: #7edd55; }
+
+.burgers__consist_sauce {
+  fill: #c1401e; }
+
+.burgers__consist_cucumber {
+  fill: #7edd55; }
+
+.burgers__consist_cheese {
+  fill: #f9b43b; }
+
+.burgers__consist_title {
+  padding-left: 20px;
+  font-family: 'ubuntumedium';
+  font-weight: normal;
+  font-size: 14px; }
+
+.burgers__consist_text {
+  padding-left: 50px;
+  font-family: 'ubuntulight';
+  font-weight: normal;
+  font-size: 0.875rem; }
+
+.burgers__calories {
+  position: absolute;
+  bottom: 0;
+  left: 0; }
+
+.burgers__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.burgers__text {
+  max-width: 441px;
+  color: #ffffff;
+  font-family: 'ubuntulight';
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 23.97px;
+  margin-top: 56px; }
+
+.burgers__price {
+  color: #e35028;
+  font-family: 'gagalinregular';
+  font-size: 30px;
+  font-weight: normal;
+  line-height: 28.08px;
+  margin-top: 36px; }
+
+.burgers__price_number {
+  font-size: 72px;
+  letter-spacing: -1.79px; }
+
+.burgers__price_rub {
+  letter-spacing: -0.75px;
+  margin-right: 29px; }
 
 .team {
   background-image: url("../../img/bg/team.png");

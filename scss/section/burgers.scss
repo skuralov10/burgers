@@ -3,4 +3,161 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-}    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.burgers__container {
+    position: relative;
+    display: flex;
+}
+
+.burgers__arrow-left {
+    position: absolute;
+    left: -50px;
+    top: 50%;
+    transform: rotate(90deg);
+}
+
+.burgers__arrow-icon {
+    width: 25px;
+    height: 25px;
+    fill: #fff;
+
+    &:hover {
+        fill: red;
+    }
+}
+
+.burgers__arrow-right {
+    position: absolute;
+    right: -10px;
+    top: 50%;
+    transform: rotate(-90deg);
+}
+
+.burgers__img {
+    display: flex;
+    align-items: center;
+}
+
+.burgers__consist {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90px;
+    height: 90px;
+    border-radius: 10px;
+    background-color: #e35028;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    
+    &:hover {
+        background-color: $red;
+    }
+
+    &:hover .burgers__consist_wrap {
+        display: flex;
+        left: 90px;
+    }
+}
+
+.burgers__consist_wrap {
+    display: none;
+    position: absolute;
+    border-radius: 10px;
+    background-color: #fff;
+    top: 0;
+    min-width: 265px;
+}
+
+.burgers__consist_img {
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+.burgers__consist_icon {
+    width: 50px;
+    height: 50px;
+}
+
+.burgers__consist_beef {
+    fill: $red;
+}
+
+.burgers__consist_buns {
+    fill: $yellow;
+}
+
+.burgers__consist_salad {
+    fill: $green;
+}
+
+.burgers__consist_sauce {
+    fill: $red;
+}
+
+.burgers__consist_cucumber {
+    fill: $green;
+}
+
+.burgers__consist_cheese {
+    fill: $yellow;
+}
+
+.burgers__consist_title {
+    padding-left: 20px;
+    font-family: 'ubuntumedium';
+    font-weight: normal;
+    font-size: 14px;
+}
+
+.burgers__consist_text {
+    padding-left: 50px;
+    font-family: 'ubuntulight';
+    font-weight: normal;
+    font-size: rem(14px);
+}
+
+.burgers__calories {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.burgers__item {
+    display: flex;
+}
+
+.burgers__text {
+    max-width: 441px;
+    color: #ffffff;
+    font-family: 'ubuntulight';
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 23.97px;
+    margin-top: 56px;
+
+}
+
+.burgers__price {
+    color: #e35028;
+    font-family: 'gagalinregular';
+    font-size: 30px;
+    font-weight: normal;
+    line-height: 28.08px;
+    margin-top: 36px;
+}
+
+.burgers__price_number {
+    font-size: 72px;
+    letter-spacing: -1.79px;
+}
+
+.burgers__price_rub {
+    letter-spacing: -0.75px;
+    margin-right: 29px;
+}
