@@ -110,90 +110,420 @@
                             <use xlink:href="./img/icons/sprite.svg#arrow-scroll"></use>
                         </svg>
                     </a>
-                    <ul class="burgers__list">
-                        <li class="burgers__item">
-                            <div class="burgers__img">
-                                <div class="burgers__photo">
-                                    <img src="./img/content/dark_beef_burger.png" alt="dark_beef_burger">
-                                </div>
-                                <div class="burgers__consist">
-                                    <img src="./img/icons/burger_consist.png" alt="burger_consist">
-                                    <div class="burgers__consist_wrap">
-                                        <table class="burgers__consist_table">
-                                            <tr class="burgers__consist_tr">
-                                                <td class="burgers__consist_img">
-                                                    <svg class="burgers__consist_icon burgers__consist_beef">
-                                                        <use xlink:href="./img/icons/sprite.svg#beef"></use>
-                                                    </svg>
-                                                </td>
-                                                <td class="burgers__consist_title">Говядина</td>
-                                                <td class="burgers__consist_text">300г</td>
-                                            </tr>
-                                            <tr class="burgers__consist_tr">
-                                                <td class="burgers__consist_img">
-                                                    <svg class="burgers__consist_icon burgers__consist_buns">
-                                                        <use xlink:href="./img/icons/sprite.svg#buns"></use>
-                                                    </svg>
-                                                </td>
-                                                <td class="burgers__consist_title">Булочкa</td>
-                                                <td class="burgers__consist_text">100г</td>
-                                            </tr>
-                                            <tr class="burgers__consist_tr">
-                                                <td class="burgers__consist_img">
-                                                    <svg class="burgers__consist_icon burgers__consist_salad">
-                                                        <use xlink:href="./img/icons/sprite.svg#salad"></use>
-                                                    </svg>
-                                                </td>
-                                                <td class="burgers__consist_title">Зелень</td>
-                                                <td class="burgers__consist_text">70г</td>
-                                            </tr>
-                                            <tr class="burgers__consist_tr">
-                                                <td class="burgers__consist_img">
-                                                    <svg class="burgers__consist_icon burgers__consist_sauce">
-                                                        <use xlink:href="./img/icons/sprite.svg#sauce"></use>
-                                                    </svg>
-                                                </td>
-                                                <td class="burgers__consist_title">Соус</td>
-                                                <td class="burgers__consist_text">150г</td>
-                                            </tr>
-                                            <tr class="burgers__consist_tr">
-                                                <td class="burgers__consist_img">
-                                                    <svg class="burgers__consist_icon burgers__consist_cucumber">
-                                                        <use xlink:href="./img/icons/sprite.svg#cucumber"></use>
-                                                    </svg>
-                                                </td>
-                                                <td class="burgers__consist_title">Овощи</td>
-                                                <td class="burgers__consist_text">200г</td>
-                                            </tr>
-                                            <tr class="burgers__consist_tr">
-                                                <td class="burgers__consist_img">
-                                                    <svg class="burgers__consist_icon burgers__consist_cheese">
-                                                        <use xlink:href="./img/icons/sprite.svg#cheese"></use>
-                                                    </svg>
-                                                </td>
-                                                <td class="burgers__consist_title">Сыр</td>
-                                                <td class="burgers__consist_text">80г</td>
-                                            </tr>
-                                        </table>
+                    <div class="burgers__wrap">
+                        <ul class="burgers__list">
+                            <li class="burgers__item burgers__item-active">
+                                <div class="burgers__img">
+                                    <div class="burgers__photo">
+                                        <img src="./img/content/dark_beef_burger.png" alt="dark_beef_burger">
+                                    </div>
+                                    <div class="burgers__consist">
+                                        <img src="./img/icons/burger_consist.png" alt="burger_consist">
+                                        <div class="burgers__consist_wrap">
+                                            <table class="burgers__consist_table">
+                                                <tr class="burgers__consist_tr">
+                                                    <td class="burgers__consist_img">
+                                                        <svg class="burgers__consist_icon burgers__consist_beef">
+                                                            <use xlink:href="./img/icons/sprite.svg#beef"></use>
+                                                        </svg>
+                                                    </td>
+                                                    <td class="burgers__consist_title">Говядина</td>
+                                                    <td class="burgers__consist_text">300г</td>
+                                                </tr>
+                                                <tr class="burgers__consist_tr">
+                                                    <td class="burgers__consist_img">
+                                                        <svg class="burgers__consist_icon burgers__consist_buns">
+                                                            <use xlink:href="./img/icons/sprite.svg#buns"></use>
+                                                        </svg>
+                                                    </td>
+                                                    <td class="burgers__consist_title">Булочкa</td>
+                                                    <td class="burgers__consist_text">100г</td>
+                                                </tr>
+                                                <tr class="burgers__consist_tr">
+                                                    <td class="burgers__consist_img">
+                                                        <svg class="burgers__consist_icon burgers__consist_salad">
+                                                            <use xlink:href="./img/icons/sprite.svg#salad"></use>
+                                                        </svg>
+                                                    </td>
+                                                    <td class="burgers__consist_title">Зелень</td>
+                                                    <td class="burgers__consist_text">70г</td>
+                                                </tr>
+                                                <tr class="burgers__consist_tr">
+                                                    <td class="burgers__consist_img">
+                                                        <svg class="burgers__consist_icon burgers__consist_sauce">
+                                                            <use xlink:href="./img/icons/sprite.svg#sauce"></use>
+                                                        </svg>
+                                                    </td>
+                                                    <td class="burgers__consist_title">Соус</td>
+                                                    <td class="burgers__consist_text">150г</td>
+                                                </tr>
+                                                <tr class="burgers__consist_tr">
+                                                    <td class="burgers__consist_img">
+                                                        <svg class="burgers__consist_icon burgers__consist_cucumber">
+                                                            <use xlink:href="./img/icons/sprite.svg#cucumber"></use>
+                                                        </svg>
+                                                    </td>
+                                                    <td class="burgers__consist_title">Овощи</td>
+                                                    <td class="burgers__consist_text">200г</td>
+                                                </tr>
+                                                <tr class="burgers__consist_tr">
+                                                    <td class="burgers__consist_img">
+                                                        <svg class="burgers__consist_icon burgers__consist_cheese">
+                                                            <use xlink:href="./img/icons/sprite.svg#cheese"></use>
+                                                        </svg>
+                                                    </td>
+                                                    <td class="burgers__consist_title">Сыр</td>
+                                                    <td class="burgers__consist_text">80г</td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="burgers__calories">
+                                        <img src="./img/icons/kkal_calories.png" alt="kkal_calories">
                                     </div>
                                 </div>
-                                <div class="burgers__calories">
-                                    <img src="./img/icons/kkal_calories.png" alt="kkal_calories">
+                                <div class="burgers__content">
+                                    <h2 class="section__title section__title_color_white">Dark BEEF Burger</h2>
+                                    <div class="burgers__text">Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, 
+                                        тремя кусочками нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь 
+                                        с добавлением экзотического соуса чураско.
+                                    </div>
+                                    <div class="burgers__price">
+                                        <span class="burgers__price_number">500</span><span class="burgers__price_rub"> рублей</span>
+                                        <a href="#" class="btn">Заказать</a>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="burgers__content">
-                                <h2 class="section__title section__title_color_white">Dark BEEF Burger</h2>
-                                <div class="burgers__text">Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, 
-                                    тремя кусочками нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь 
-                                    с добавлением экзотического соуса чураско.
+                            </li>
+                            <li class="burgers__item">
+                                <div class="burgers__img">
+                                    <div class="burgers__photo">
+                                        <img src="./img/content/burger_bacon_cheeseburger.png" alt="burger_bacon_cheeseburger">
+                                    </div>
+                                    <div class="burgers__consist">
+                                        <img src="./img/icons/burger_consist.png" alt="burger_consist">
+                                        <div class="burgers__consist_wrap">
+                                            <table class="burgers__consist_table">
+                                                <tr class="burgers__consist_tr">
+                                                    <td class="burgers__consist_img">
+                                                        <svg class="burgers__consist_icon burgers__consist_beef">
+                                                            <use xlink:href="./img/icons/sprite.svg#beef"></use>
+                                                        </svg>
+                                                    </td>
+                                                    <td class="burgers__consist_title">Говядина</td>
+                                                    <td class="burgers__consist_text">300г</td>
+                                                </tr>
+                                                <tr class="burgers__consist_tr">
+                                                    <td class="burgers__consist_img">
+                                                        <svg class="burgers__consist_icon burgers__consist_buns">
+                                                            <use xlink:href="./img/icons/sprite.svg#buns"></use>
+                                                        </svg>
+                                                    </td>
+                                                    <td class="burgers__consist_title">Булочкa</td>
+                                                    <td class="burgers__consist_text">100г</td>
+                                                </tr>
+                                                <tr class="burgers__consist_tr">
+                                                    <td class="burgers__consist_img">
+                                                        <svg class="burgers__consist_icon burgers__consist_salad">
+                                                            <use xlink:href="./img/icons/sprite.svg#salad"></use>
+                                                        </svg>
+                                                    </td>
+                                                    <td class="burgers__consist_title">Зелень</td>
+                                                    <td class="burgers__consist_text">70г</td>
+                                                </tr>
+                                                <tr class="burgers__consist_tr">
+                                                    <td class="burgers__consist_img">
+                                                        <svg class="burgers__consist_icon burgers__consist_sauce">
+                                                            <use xlink:href="./img/icons/sprite.svg#sauce"></use>
+                                                        </svg>
+                                                    </td>
+                                                    <td class="burgers__consist_title">Соус</td>
+                                                    <td class="burgers__consist_text">150г</td>
+                                                </tr>
+                                                <tr class="burgers__consist_tr">
+                                                    <td class="burgers__consist_img">
+                                                        <svg class="burgers__consist_icon burgers__consist_cucumber">
+                                                            <use xlink:href="./img/icons/sprite.svg#cucumber"></use>
+                                                        </svg>
+                                                    </td>
+                                                    <td class="burgers__consist_title">Овощи</td>
+                                                    <td class="burgers__consist_text">200г</td>
+                                                </tr>
+                                                <tr class="burgers__consist_tr">
+                                                    <td class="burgers__consist_img">
+                                                        <svg class="burgers__consist_icon burgers__consist_cheese">
+                                                            <use xlink:href="./img/icons/sprite.svg#cheese"></use>
+                                                        </svg>
+                                                    </td>
+                                                    <td class="burgers__consist_title">Сыр</td>
+                                                    <td class="burgers__consist_text">80г</td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="burgers__calories">
+                                        <img src="./img/icons/kkal_calories.png" alt="kkal_calories">
+                                    </div>
                                 </div>
-                                <div class="burgers__price">
-                                    <span class="burgers__price_number">500</span><span class="burgers__price_rub"> рублей</span>
-                                    <a href="#" class="btn">Заказать</a>
+                                <div class="burgers__content">
+                                    <h2 class="section__title section__title_color_white">Diner Bacon Cheesburger</h2>
+                                    <div class="burgers__text">Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, 
+                                        тремя кусочками нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь 
+                                        с добавлением экзотического соуса чураско.
+                                    </div>
+                                    <div class="burgers__price">
+                                        <span class="burgers__price_number">400</span><span class="burgers__price_rub"> рублей</span>
+                                        <a href="#" class="btn">Заказать</a>
+                                    </div>
                                 </div>
-                            </div>
-                        </li>
-                    </ul>
+                            </li>
+                            <li class="burgers__item">
+                                <div class="burgers__img">
+                                    <div class="burgers__photo">
+                                        <img src="./img/content/burger_sandwich.png" alt="burger_sandwich">
+                                    </div>
+                                    <div class="burgers__consist">
+                                        <img src="./img/icons/burger_consist.png" alt="burger_consist">
+                                        <div class="burgers__consist_wrap">
+                                            <table class="burgers__consist_table">
+                                                <tr class="burgers__consist_tr">
+                                                    <td class="burgers__consist_img">
+                                                        <svg class="burgers__consist_icon burgers__consist_beef">
+                                                            <use xlink:href="./img/icons/sprite.svg#beef"></use>
+                                                        </svg>
+                                                    </td>
+                                                    <td class="burgers__consist_title">Говядина</td>
+                                                    <td class="burgers__consist_text">300г</td>
+                                                </tr>
+                                                <tr class="burgers__consist_tr">
+                                                    <td class="burgers__consist_img">
+                                                        <svg class="burgers__consist_icon burgers__consist_buns">
+                                                            <use xlink:href="./img/icons/sprite.svg#buns"></use>
+                                                        </svg>
+                                                    </td>
+                                                    <td class="burgers__consist_title">Булочкa</td>
+                                                    <td class="burgers__consist_text">100г</td>
+                                                </tr>
+                                                <tr class="burgers__consist_tr">
+                                                    <td class="burgers__consist_img">
+                                                        <svg class="burgers__consist_icon burgers__consist_salad">
+                                                            <use xlink:href="./img/icons/sprite.svg#salad"></use>
+                                                        </svg>
+                                                    </td>
+                                                    <td class="burgers__consist_title">Зелень</td>
+                                                    <td class="burgers__consist_text">70г</td>
+                                                </tr>
+                                                <tr class="burgers__consist_tr">
+                                                    <td class="burgers__consist_img">
+                                                        <svg class="burgers__consist_icon burgers__consist_sauce">
+                                                            <use xlink:href="./img/icons/sprite.svg#sauce"></use>
+                                                        </svg>
+                                                    </td>
+                                                    <td class="burgers__consist_title">Соус</td>
+                                                    <td class="burgers__consist_text">150г</td>
+                                                </tr>
+                                                <tr class="burgers__consist_tr">
+                                                    <td class="burgers__consist_img">
+                                                        <svg class="burgers__consist_icon burgers__consist_cucumber">
+                                                            <use xlink:href="./img/icons/sprite.svg#cucumber"></use>
+                                                        </svg>
+                                                    </td>
+                                                    <td class="burgers__consist_title">Овощи</td>
+                                                    <td class="burgers__consist_text">200г</td>
+                                                </tr>
+                                                <tr class="burgers__consist_tr">
+                                                    <td class="burgers__consist_img">
+                                                        <svg class="burgers__consist_icon burgers__consist_cheese">
+                                                            <use xlink:href="./img/icons/sprite.svg#cheese"></use>
+                                                        </svg>
+                                                    </td>
+                                                    <td class="burgers__consist_title">Сыр</td>
+                                                    <td class="burgers__consist_text">80г</td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="burgers__calories">
+                                        <img src="./img/icons/kkal_calories.png" alt="kkal_calories">
+                                    </div>
+                                </div>
+                                <div class="burgers__content">
+                                    <h2 class="section__title section__title_color_white">Burger Sandwich</h2>
+                                    <div class="burgers__text">Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, 
+                                        тремя кусочками нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь 
+                                        с добавлением экзотического соуса чураско.
+                                    </div>
+                                    <div class="burgers__price">
+                                        <span class="burgers__price_number">600</span><span class="burgers__price_rub"> рублей</span>
+                                        <a href="#" class="btn">Заказать</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="burgers__item">
+                                <div class="burgers__img">
+                                    <div class="burgers__photo">
+                                        <img src="./img/content/chiken_burger.png" alt="chiken_burger">
+                                    </div>
+                                    <div class="burgers__consist">
+                                        <img src="./img/icons/burger_consist.png" alt="burger_consist">
+                                        <div class="burgers__consist_wrap">
+                                            <table class="burgers__consist_table">
+                                                <tr class="burgers__consist_tr">
+                                                    <td class="burgers__consist_img">
+                                                        <svg class="burgers__consist_icon burgers__consist_beef">
+                                                            <use xlink:href="./img/icons/sprite.svg#beef"></use>
+                                                        </svg>
+                                                    </td>
+                                                    <td class="burgers__consist_title">Говядина</td>
+                                                    <td class="burgers__consist_text">300г</td>
+                                                </tr>
+                                                <tr class="burgers__consist_tr">
+                                                    <td class="burgers__consist_img">
+                                                        <svg class="burgers__consist_icon burgers__consist_buns">
+                                                            <use xlink:href="./img/icons/sprite.svg#buns"></use>
+                                                        </svg>
+                                                    </td>
+                                                    <td class="burgers__consist_title">Булочкa</td>
+                                                    <td class="burgers__consist_text">100г</td>
+                                                </tr>
+                                                <tr class="burgers__consist_tr">
+                                                    <td class="burgers__consist_img">
+                                                        <svg class="burgers__consist_icon burgers__consist_salad">
+                                                            <use xlink:href="./img/icons/sprite.svg#salad"></use>
+                                                        </svg>
+                                                    </td>
+                                                    <td class="burgers__consist_title">Зелень</td>
+                                                    <td class="burgers__consist_text">70г</td>
+                                                </tr>
+                                                <tr class="burgers__consist_tr">
+                                                    <td class="burgers__consist_img">
+                                                        <svg class="burgers__consist_icon burgers__consist_sauce">
+                                                            <use xlink:href="./img/icons/sprite.svg#sauce"></use>
+                                                        </svg>
+                                                    </td>
+                                                    <td class="burgers__consist_title">Соус</td>
+                                                    <td class="burgers__consist_text">150г</td>
+                                                </tr>
+                                                <tr class="burgers__consist_tr">
+                                                    <td class="burgers__consist_img">
+                                                        <svg class="burgers__consist_icon burgers__consist_cucumber">
+                                                            <use xlink:href="./img/icons/sprite.svg#cucumber"></use>
+                                                        </svg>
+                                                    </td>
+                                                    <td class="burgers__consist_title">Овощи</td>
+                                                    <td class="burgers__consist_text">200г</td>
+                                                </tr>
+                                                <tr class="burgers__consist_tr">
+                                                    <td class="burgers__consist_img">
+                                                        <svg class="burgers__consist_icon burgers__consist_cheese">
+                                                            <use xlink:href="./img/icons/sprite.svg#cheese"></use>
+                                                        </svg>
+                                                    </td>
+                                                    <td class="burgers__consist_title">Сыр</td>
+                                                    <td class="burgers__consist_text">80г</td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="burgers__calories">
+                                        <img src="./img/icons/kkal_calories.png" alt="kkal_calories">
+                                    </div>
+                                </div>
+                                <div class="burgers__content">
+                                    <h2 class="section__title section__title_color_white">Chiken Burger</h2>
+                                    <div class="burgers__text">Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, 
+                                        тремя кусочками нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь 
+                                        с добавлением экзотического соуса чураско.
+                                    </div>
+                                    <div class="burgers__price">
+                                        <span class="burgers__price_number">650</span><span class="burgers__price_rub"> рублей</span>
+                                        <a href="#" class="btn">Заказать</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="burgers__item">
+                                <div class="burgers__img">
+                                    <div class="burgers__photo">
+                                        <img src="./img/content/spicy_shrimp_burger.png" alt="spicy_shrimp_burger">
+                                    </div>
+                                    <div class="burgers__consist">
+                                        <img src="./img/icons/burger_consist.png" alt="burger_consist">
+                                        <div class="burgers__consist_wrap">
+                                            <table class="burgers__consist_table">
+                                                <tr class="burgers__consist_tr">
+                                                    <td class="burgers__consist_img">
+                                                        <svg class="burgers__consist_icon burgers__consist_beef">
+                                                            <use xlink:href="./img/icons/sprite.svg#beef"></use>
+                                                        </svg>
+                                                    </td>
+                                                    <td class="burgers__consist_title">Говядина</td>
+                                                    <td class="burgers__consist_text">300г</td>
+                                                </tr>
+                                                <tr class="burgers__consist_tr">
+                                                    <td class="burgers__consist_img">
+                                                        <svg class="burgers__consist_icon burgers__consist_buns">
+                                                            <use xlink:href="./img/icons/sprite.svg#buns"></use>
+                                                        </svg>
+                                                    </td>
+                                                    <td class="burgers__consist_title">Булочкa</td>
+                                                    <td class="burgers__consist_text">100г</td>
+                                                </tr>
+                                                <tr class="burgers__consist_tr">
+                                                    <td class="burgers__consist_img">
+                                                        <svg class="burgers__consist_icon burgers__consist_salad">
+                                                            <use xlink:href="./img/icons/sprite.svg#salad"></use>
+                                                        </svg>
+                                                    </td>
+                                                    <td class="burgers__consist_title">Зелень</td>
+                                                    <td class="burgers__consist_text">70г</td>
+                                                </tr>
+                                                <tr class="burgers__consist_tr">
+                                                    <td class="burgers__consist_img">
+                                                        <svg class="burgers__consist_icon burgers__consist_sauce">
+                                                            <use xlink:href="./img/icons/sprite.svg#sauce"></use>
+                                                        </svg>
+                                                    </td>
+                                                    <td class="burgers__consist_title">Соус</td>
+                                                    <td class="burgers__consist_text">150г</td>
+                                                </tr>
+                                                <tr class="burgers__consist_tr">
+                                                    <td class="burgers__consist_img">
+                                                        <svg class="burgers__consist_icon burgers__consist_cucumber">
+                                                            <use xlink:href="./img/icons/sprite.svg#cucumber"></use>
+                                                        </svg>
+                                                    </td>
+                                                    <td class="burgers__consist_title">Овощи</td>
+                                                    <td class="burgers__consist_text">200г</td>
+                                                </tr>
+                                                <tr class="burgers__consist_tr">
+                                                    <td class="burgers__consist_img">
+                                                        <svg class="burgers__consist_icon burgers__consist_cheese">
+                                                            <use xlink:href="./img/icons/sprite.svg#cheese"></use>
+                                                        </svg>
+                                                    </td>
+                                                    <td class="burgers__consist_title">Сыр</td>
+                                                    <td class="burgers__consist_text">80г</td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="burgers__calories">
+                                        <img src="./img/icons/kkal_calories.png" alt="kkal_calories">
+                                    </div>
+                                </div>
+                                <div class="burgers__content">
+                                    <h2 class="section__title section__title_color_white">Spicy Burger</h2>
+                                    <div class="burgers__text">Ваш старый добрый знакомый, с рубленым бифштексом из 100% говядины, 
+                                        тремя кусочками нежнейшего сыра эмменталь, двумя помидорами, луком, салатом и соусом гриль теперь 
+                                        с добавлением экзотического соуса чураско.
+                                    </div>
+                                    <div class="burgers__price">
+                                        <span class="burgers__price_number">800</span><span class="burgers__price_rub"> рублей</span>
+                                        <a href="#" class="btn">Заказать</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>                    
                     <a href="" class="burgers__arrow-right">
                         <svg class="burgers__arrow-icon">
                             <use xlink:href="./img/icons/sprite.svg#arrow-scroll"></use>
@@ -545,6 +875,6 @@
         </aside>
     </div>
     <script src="js/jquery-3.3.1.js"></script>
-    <script src="js/index.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>

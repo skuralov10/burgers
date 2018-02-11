@@ -913,6 +913,34 @@ footer {
   -ms-transform: rotate(-90deg);
   transform: rotate(-90deg); }
 
+.burgers__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+  width: 940px; }
+
+.burgers__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  will-change: right; }
+
+.burgers__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 940px; }
+
 .burgers__img {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -920,6 +948,9 @@ footer {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center; }
+
+.burgers__photo {
+  width: 420px; }
 
 .burgers__consist {
   position: absolute;

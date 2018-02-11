@@ -37,9 +37,38 @@
     transform: rotate(-90deg);
 }
 
+.burgers__wrap {
+    display: flex;
+    overflow: hidden;
+    width: 940px;
+}
+
+.burgers__list {
+    display: flex;
+    position: relative;
+    will-change: right;
+
+}
+
+.burgers__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 940px;
+}
+
+.burgers__item-active {
+}
+
 .burgers__img {
     display: flex;
     align-items: center;
+}
+
+.burgers__photo {
+    width: 420px;
+    // height: 430px;
 }
 
 .burgers__consist {
