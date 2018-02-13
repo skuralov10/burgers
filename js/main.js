@@ -1,28 +1,52 @@
-//section burgers
+$(document).ready(function(){
 
-// const left = document.querySelector('.burgers__arrow-left');
-// const right = document.querySelector('.burgers__arrow-right');
-// const items = document.querySelector('.burgers__item');
+    //burgers
+    var slider = $('.burgers__list').bxSlider({
+        speed : 1000,
+        pager : false,
+        controls : false
+    });        
 
-// let currentItem = 0;
-
-// left.addEventListener('click', function(e) {
-//     e.preventDefault();
-// });
-
-// right.addEventListener('click', function(e) {
-//     e.preventDefault();
-// });
-
-
-$(document).ready(() => {
-    $('.burgers__arrow-left').on('click', e => {
+    $('.burgers__arrow-left').on('click', function(e){
         e.preventDefault();
+        slider.goToPrevSlide();
     });
-});
+    
+    $('.burgers__arrow-right').on('click', function(e){
+        e.preventDefault();    
+        slider.goToNextSlide();   
+    });
 
-$(document).ready(() => {
-    $('.burgers__arrow-right').on('click', e => {
-        e.preventDefault();
+
+    //team
+    $(function(){
+        $(".team-accordeon").accordion({
+            collapsible: true,
+        });
     });
+
+    $('.team-accordeon__trigger').on('click', function(e){
+        // e.preventDefault();
+        $('.team-accordeon__trigger').css({
+            'color' : "yellow"
+        });
+    });
+
+
+    //menu
+    $('.menu-accordeon__item_meat').on('click', function(e){
+        e.preventDefault();
+        $('.menu-accordeon__item_meat').toggleClass('menu-accordeon__item_active');
+    });
+
+    $('.menu-accordeon__item_vegan').on('click', function(e){
+        e.preventDefault();
+        $('.menu-accordeon__item_vegan').toggleClass('menu-accordeon__item_active');
+    });
+
+    $('.menu-accordeon__item_dieta').on('click', function(e){
+        e.preventDefault();
+        $('.menu-accordeon__item_dieta').toggleClass('menu-accordeon__item_active');
+    });
+
 });

@@ -892,11 +892,19 @@ footer {
 
 .burgers__arrow-left {
   position: absolute;
-  left: -50px;
+  left: -40px;
   top: 50%;
   -webkit-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
   transform: rotate(90deg); }
+
+.burgers__arrow-right {
+  position: absolute;
+  right: -40px;
+  top: 50%;
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg); }
 
 .burgers__arrow-icon {
   width: 25px;
@@ -905,27 +913,18 @@ footer {
   .burgers__arrow-icon:hover {
     fill: red; }
 
-.burgers__arrow-right {
-  position: absolute;
-  right: -10px;
-  top: 50%;
-  -webkit-transform: rotate(-90deg);
-  -ms-transform: rotate(-90deg);
-  transform: rotate(-90deg); }
-
-.burgers__wrap {
+.burgers__slider {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  overflow: hidden;
-  width: 940px; }
+  overflow: hidden; }
 
 .burgers__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: relative;
-  will-change: right; }
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap; }
 
 .burgers__item {
   display: -webkit-box;
@@ -939,7 +938,11 @@ footer {
   justify-content: center;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  width: 940px; }
+  width: 940px;
+  height: 100%;
+  position: relative;
+  top: 0;
+  left: 0; }
 
 .burgers__img {
   display: -webkit-box;
@@ -1103,14 +1106,7 @@ footer {
     .team-accordeon__item {
       text-align: center; } }
 
-.team-accordeon__item-active .team-accordeon__trigger {
-  color: #f9b43b; }
-  .team-accordeon__item-active .team-accordeon__trigger:before {
-    -webkit-transform: rotate(180deg);
-    -ms-transform: rotate(180deg);
-    transform: rotate(180deg); }
-
-.team-accordeon__item-active .team-accordeon__content {
+.team-accordeon__item .team-accordeon__content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1124,10 +1120,6 @@ footer {
   line-height: 1.75812rem;
   display: block;
   opacity: .93; }
-  @media screen and (max-width: 768px) {
-    .team-accordeon__trigger {
-      display: inline-block;
-      font-size: 1.5625rem; } }
   .team-accordeon__trigger:before {
     content: "";
     display: inline-block;
@@ -1137,6 +1129,10 @@ footer {
     border-top-color: #f9b43b;
     border-bottom-width: 0rem;
     margin-right: 0.625rem; }
+  @media screen and (max-width: 768px) {
+    .team-accordeon__trigger {
+      display: inline-block;
+      font-size: 1.5625rem; } }
 
 .team-accordeon__content {
   height: 0;
@@ -1241,6 +1237,12 @@ footer {
   width: 100%;
   line-height: 1.8;
   display: none; }
+
+.menu-accordeon__item_active .menu-accordeon__content {
+  width: 31.25rem; }
+
+.menu-accordeon__item_active .menu-accordeon__text {
+  display: block; }
 
 .reviews__list {
   width: 100%;

@@ -15,9 +15,16 @@
 
 .burgers__arrow-left {
     position: absolute;
-    left: -50px;
+    left: -40px;
     top: 50%;
     transform: rotate(90deg);
+}
+
+.burgers__arrow-right {
+    position: absolute;
+    right: -40px;
+    top: 50%;
+    transform: rotate(-90deg);
 }
 
 .burgers__arrow-icon {
@@ -30,24 +37,14 @@
     }
 }
 
-.burgers__arrow-right {
-    position: absolute;
-    right: -10px;
-    top: 50%;
-    transform: rotate(-90deg);
-}
-
-.burgers__wrap {
+.burgers__slider {
     display: flex;
     overflow: hidden;
-    width: 940px;
 }
 
-.burgers__list {
+.burgers__list {    
     display: flex;
-    position: relative;
-    will-change: right;
-
+    flex-wrap: nowrap;
 }
 
 .burgers__item {
@@ -56,6 +53,10 @@
     justify-content: center;
     box-sizing: border-box;
     width: 940px;
+    height: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
 }
 
 .burgers__item-active {

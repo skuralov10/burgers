@@ -34,19 +34,19 @@
 }
 
 .team-accordeon__item {
-    margin-bottom: rem(35px);
+    margin-bottom: rem(35px);    
 
     @include tablets {
         text-align: center;
     }
 }
 
-.team-accordeon__item-active {
+.team-accordeon__item {
     .team-accordeon__trigger {
-        color: $yellow;
+        // color: $yellow;
 
         &:before {
-            transform: rotate(180deg);
+            // transform: rotate(180deg);
         }
     }
     .team-accordeon__content {
@@ -64,10 +64,9 @@
     display: block;
     opacity: .93;
 
-    @include tablets {
-        display: inline-block;
-        font-size: rem(25px);
-    }
+    // &:hover {
+    //     color: $yellow;
+    // }
 
     &:before {
         content: "";
@@ -78,7 +77,12 @@
         border-top-color: $yellow;
         border-bottom-width: rem(0px);
         margin-right: rem(10px);
-    }    
+    }
+    
+    @include tablets {
+        display: inline-block;
+        font-size: rem(25px);
+    }
 }
 
 .team-accordeon__content {
