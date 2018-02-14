@@ -1,9 +1,17 @@
 .maps {
-    background-image: url('../../img/bg/maps.png'); 
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    // background-image: url('../../img/bg/maps.png'); 
+    // background-position: center;
+    // background-repeat: no-repeat;
+    // background-size: cover;
     position: relative;
+}
+
+.yandex-map {
+    position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
 }
 
 .footer {

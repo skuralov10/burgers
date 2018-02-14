@@ -74,7 +74,17 @@ h1, h2, h3, h4, h5, h6 {
     overflow: hidden;
     width: 100%;
     // min-width: rem(940px) + rem(20px);
-    min-height: 100%;
+    // min-height: 100%; // One Page Scroll
+    height: 100%;
+}
+
+.main-content {
+    height: 100%;
+    min-height: 650px;
+    // position: relative; //так двигаем One Page Scroll
+    // top: 0%;
+    transition: 1s;
+    will-change: transform;
 }
 
 // .wrapper:after {
@@ -105,6 +115,7 @@ footer {
 }
 
 .section {
-    height: 100vh;
+    // height: 100vh;
+    height: 100%;
     min-height: rem(650px);
 }

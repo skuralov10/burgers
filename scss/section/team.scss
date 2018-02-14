@@ -45,9 +45,9 @@
     .team-accordeon__trigger {
         // color: $yellow;
 
-        &:before {
-            // transform: rotate(180deg);
-        }
+        // &:before {
+        //     transform: rotate(180deg);
+        // }
     }
     .team-accordeon__content {
         display: flex;
@@ -64,9 +64,9 @@
     display: block;
     opacity: .93;
 
-    // &:hover {
-    //     color: $yellow;
-    // }
+    &:hover {
+        color: $yellow;
+    }
 
     &:before {
         content: "";

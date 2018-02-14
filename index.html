@@ -8,9 +8,10 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="icon" href="img/icons/favicon.png">
 </head>
+<body>
     <div class="wrapper">
         <div class="main-content">
-            <section class="section hero">
+            <section class="section hero active">
                 <div class="container hero__container">
                     <header class="header">
                         <a href="#" class="logo">
@@ -19,15 +20,15 @@
                         <div class="header__btns">
                             <nav class="nav">
                                 <ul class="nav__list">
-                                    <li class="nav__item"><a href="#" class="nav__link">о нас</a></li>
-                                    <li class="nav__item"><a href="#" class="nav__link">бургеры</a></li>
-                                    <li class="nav__item"><a href="#" class="nav__link">команда</a></li>
-                                    <li class="nav__item"><a href="#" class="nav__link">меню</a></li>
-                                    <li class="nav__item"><a href="#" class="nav__link">отзывы</a></li>
-                                    <li class="nav__item"><a href="#" class="nav__link">контакты</a></li>
+                                    <li class="nav__item"><a href="#" class="nav__link" data-scrool-to="1">о нас</a></li>
+                                    <li class="nav__item"><a href="#" class="nav__link" data-scrool-to="2">бургеры</a></li>
+                                    <li class="nav__item"><a href="#" class="nav__link" data-scrool-to="3">команда</a></li>
+                                    <li class="nav__item"><a href="#" class="nav__link" data-scrool-to="4">меню</a></li>
+                                    <li class="nav__item"><a href="#" class="nav__link" data-scrool-to="5">отзывы</a></li>
+                                    <li class="nav__item"><a href="#" class="nav__link" data-scrool-to="7">контакты</a></li>
                                 </ul>
                             </nav>
-                            <a href="#" class="btn">Заказать</a>
+                            <a href="#" class="btn" data-scrool-to="6">Заказать</a>
                             <a href="#" class="hamburger-menu">
                                 <div class="hamburger-menu__bars"></div>
                                 <div class="hamburger-menu__bars"></div>
@@ -792,62 +793,61 @@
                 </div>
             </section>
             <section class="section maps">
-                <div class="container">
-                    <footer class="footer">
-                        <div class="footer__left">
-                            <div class="contacts">
-                                <div class="contacts__address">Санкт-Петербург, ул.Бабушкина, д.12/1, 15</div>
-                                <a href="tel:+78123771377" class="contacts__phone">
-                                    <svg class="contacts__phone_icon">
-                                        <use xlink:href="./img/icons/sprite.svg#phone"></use>
-                                    </svg>
-                                    <div class="contacts__number">+7 (812) 377-13-77</div>
-                                </a>
-                            </div>
+                <div class="yandex-map" id="maps"></div>
+                <footer class="footer">
+                    <div class="footer__left">
+                        <div class="contacts">
+                            <div class="contacts__address">Санкт-Петербург, ул.Бабушкина, д.12/1, 15</div>
+                            <a href="tel:+78123771377" class="contacts__phone">
+                                <svg class="contacts__phone_icon">
+                                    <use xlink:href="./img/icons/sprite.svg#phone"></use>
+                                </svg>
+                                <div class="contacts__number">+7 (812) 377-13-77</div>
+                            </a>
                         </div>
-                        <div class="footer__right">
-                            <div class="social">
-                                <ul class="social__list">
-                                    <li class="social__item">
-                                        <a href="#" class="social__link">
-                                            <svg class="social__icon">
-                                                <use xlink:href="./img/icons/sprite.svg#vk"></use>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                    <li class="social__item">
-                                        <a href="#" class="social__link">
-                                            <svg class="social__icon social__icon_active">
-                                                <use xlink:href="./img/icons/sprite.svg#fb"></use>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                    <li class="social__item">
-                                        <a href="#" class="social__link">
-                                            <svg class="social__icon">
-                                                <use xlink:href="./img/icons/sprite.svg#inst"></use>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                    <li class="social__item">
-                                        <a href="#" class="social__link">
-                                            <svg class="social__icon">
-                                                <use xlink:href="./img/icons/sprite.svg#twitter"></use>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
+                    </div>
+                    <div class="footer__right">
+                        <div class="social">
+                            <ul class="social__list">
+                                <li class="social__item">
+                                    <a href="#" class="social__link">
+                                        <svg class="social__icon">
+                                            <use xlink:href="./img/icons/sprite.svg#vk"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social__item">
+                                    <a href="#" class="social__link">
+                                        <svg class="social__icon">
+                                            <use xlink:href="./img/icons/sprite.svg#fb"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social__item">
+                                    <a href="#" class="social__link">
+                                        <svg class="social__icon">
+                                            <use xlink:href="./img/icons/sprite.svg#inst"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="social__item">
+                                    <a href="#" class="social__link">
+                                        <svg class="social__icon">
+                                            <use xlink:href="./img/icons/sprite.svg#twitter"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
                         </div>
-                    </footer>
-                </div>
-            </section>
+                    </div>
+                </footer>
+            </section>            
         </div>
         <aside>
             <nav class="nav-bar">
                 <ul class="nav-bar__list">
                     <li class="nav-bar__item">
-                        <a href="#" class="nav-bar__link nav-bar__link_active"></a>
+                        <a href="#" class="nav-bar__link" data-scrool-to="0"></a>
                     </li>
                     <li class="nav-bar__item">
                         <a href="#" class="nav-bar__link"></a>
@@ -872,11 +872,13 @@
                     </li>
                 </ul>
             </nav>            
-        </aside>
+        </aside>        
     </div>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
     <script src="js/jquery-3.3.1.js"></script>
     <script src="js/jquery.bxslider.js"></script>
-    <script src="js/jquery.zaccordion.min.js"></script>
+    <script src="js/jquery.touchSwipe.min.js"></script>
+    <script src="js/mobile-detect.min.js"></script>
     <script src="js/jquery-ui.min.js"></script>
     <script src="js/main.js"></script>
 </body>
