@@ -120,6 +120,11 @@
     padding-top: rem(40px);
     padding-left: rem(695px);
     background-color: rgba($black, .95);
+
+    @include phones {
+        padding-top: rem(0px);
+        padding-left: rem(0px);
+    }
 }
 
 .hero__content {

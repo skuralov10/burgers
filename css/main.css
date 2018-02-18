@@ -823,6 +823,10 @@ footer {
   padding-top: 2.5rem;
   padding-left: 43.4375rem;
   background-color: rgba(47, 50, 52, 0.95); }
+  @media screen and (max-width: 480px) {
+    .hamburger-overlay {
+      padding-top: 0rem;
+      padding-left: 0rem; } }
 
 .hero__content {
   display: -webkit-box;
