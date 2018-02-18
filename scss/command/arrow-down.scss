@@ -1,6 +1,10 @@
 .arrow-down {
     display: flex;
-    justify-content: center;    
+    justify-content: center;
+    
+    @include tablets {
+        display: none;
+    }
 }
 
 .arrow-down__icon {

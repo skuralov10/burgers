@@ -1,12 +1,12 @@
 .section__title {
     color: $yellow;
     font-family: 'gagalinregular';
-    font-size: rem(72px);
+    font-size: rem(62px);
     font-weight: normal;
     line-height: rem(85px);
 
     @include phones {
-        font-size: rem(63px);
+        line-height: rem(50px);
     }
 }
 
@@ -16,8 +16,13 @@
 
 .section__title_color_white {
     color: #ffffff;
-    // padding-left: rem(50px);
+    padding-left: rem(50px);
     padding-top: rem(40px);
+
+    @include phones {
+        padding-top: rem(5px);
+        font-size: rem(40px);
+    }
 }
 
 .section__title_align_center {
@@ -25,6 +30,6 @@
     padding-top: rem(40px);
 
     @include phones {
-        padding-top: rem(80px);
+        line-height: rem(80px);
     }
 }

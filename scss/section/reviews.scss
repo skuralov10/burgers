@@ -37,7 +37,7 @@
     opacity: 0;
     transition: .3s;
     transform: scale(.8);
-    padding: 50px 30px 50px 20px;
+    padding: rem(50px) rem(30px) rem(50px) rem(20px);
 
     @include tablets {
         text-align: center;

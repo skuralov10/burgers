@@ -42,17 +42,19 @@
 }
 
 .team-accordeon__item {
-    .team-accordeon__trigger {
-        // color: $yellow;
-
-        // &:before {
-        //     transform: rotate(180deg);
-        // }
-    }
-    .team-accordeon__content {
-        display: flex;
-        height: auto;
-    }
+    &.active {
+        .team-accordeon__trigger {
+            color: $yellow;
+    
+            &:before {
+                transform: rotate(180deg);
+            }
+        }
+        .team-accordeon__content {
+            display: flex;
+            height: auto;
+        }        
+    }    
 }
 
 .team-accordeon__trigger {

@@ -1,3 +1,9 @@
+.nav-bar {
+	@include tablets {
+        display: none;
+    }
+}
+
 .nav-bar__list {
     position: fixed;
     top: rem(95px);

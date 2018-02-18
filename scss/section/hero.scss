@@ -23,11 +23,6 @@
     align-items: center;
 }
 
-.nav__list  {
-    display: flex;
-    align-items: center;
-}
-
 .nav {
     color: #ffffff;
     font-family: 'ubuntumedium';
@@ -39,10 +34,28 @@
     
     @include tablets {
         display: none;
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        left: 0;
+        top: 0;
+        z-index: 1;        
+    }
+}
+
+.nav__list  {
+    display: flex;
+    align-items: center;
+
+    @include tablets {
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
     }
 }
 
 .nav__item {
+    position: relative;
     display: flex;
     align-items: center;
 
@@ -55,6 +68,14 @@
     &:last-child:after {
         display: none;
     }
+
+    @include tablets {
+        margin-bottom: rem(35px);
+
+        &:after {
+            display: none;
+        }
+    }
 }
 
 .nav__link {
@@ -63,22 +84,42 @@
     &:hover {
         text-decoration: underline;
     }
+
+    @include tablets {
+        font-size: rem(24px);
+        &:hover {
+            text-decoration: none;
+            color: $yellow;
+        }
+    }
 }
 
 .hamburger-menu {
     display: none;
+    position: relative;
 
     @include tablets {
-        display: inline-block;
+        display: block;
     }
 }
 
-.hamburger-menu__bars {
-    width: 24px;
-    height: 4px;
-    border-radius: 50px;
+.hamburger-menu__btn {
+    width: rem(24px);
+    height: rem(4px);
+    border-radius: rem(50px);
     background-color: #ffffff;
-    margin-bottom: 3px;
+    margin-bottom: rem(3px);
+}
+
+.hamburger-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding-top: rem(40px);
+    padding-left: rem(695px);
+    background-color: rgba($black, .95);
 }
 
 .hero__content {
@@ -116,13 +157,14 @@
     margin-left: rem(9px);
 
     @include tablets {
-        margin-top: rem(0px);
+        margin-top: rem(35px);
         margin-left: rem(0px);
         text-align: center;
     }
 
     @include phones {
         width: 90%;
+        margin-top: rem(35px);
     }
 }
 
@@ -136,5 +178,6 @@
 
     @include phones {
         font-size: rem(54px);
+        margin-top: rem(15px);
     }
 }

@@ -15,8 +15,8 @@
 }
 
 .menu-accordeon__item {
-    background-position: center;
-    background-repeat: no-repeat;
+    // background-position: center;
+    // background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
     cursor: pointer;
@@ -79,25 +79,29 @@
     display: none;
 }
 
-.menu-accordeon__item_active {
+.menu-accordeon__item {
+    &.active {
+        .menu-accordeon__content{
+            width: rem(500px);
+            transition: .3s;
+        }
+        .menu-accordeon__text {
+            display: block;
+        }
+        .menu-accordeon__trigger {
+            color: $yellow;
+        }
 
-    .menu-accordeon__content{
-        width: rem(500px);
-    }
-    .menu-accordeon__text {
-        display: block;
-    }   
+        @include tablets {
+            .menu-accordeon__content{
+                width: rem(300px);
+            }   
+        }
+
+        @include phones {
+            .menu-accordeon__content{
+                width: rem(200px);
+            }   
+        }
+    }      
 }
-
-// .menu-accordeon__item{
-//     &.active{
-//         .menu-accordeon__content{
-//             width: rem(500px);
-//         }
-//         .menu-accordeon__text {
-//             display: block;
-//         }
-//     }       
-// }
-
-

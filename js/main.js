@@ -1,6 +1,7 @@
 $(document).ready(function(){
 
     //burgers
+
     var slider = $('.burgers__list').bxSlider({
         speed : 1000,
         pager : false,
@@ -17,43 +18,24 @@ $(document).ready(function(){
         slider.goToNextSlide();   
     });
 
-
     //team
-    $(function(){
-        $(".team-accordeon").accordion({
-            collapsible: true,
-        });
+
+    $('.team-accordeon__item').on('click', function (e){
+        e.preventDefault();
+        $(this).toggleClass('active')
+            .siblings().removeClass('active');
     });
-
-    $('.team-accordeon__trigger').on('click', function(e){
-        $('.team-accordeon__trigger').css({
-            'color' : "#f9b43b"
-        });
-
-        // $('.team-accordeon__trigger').css({
-        //     'transform' : 'rotate(180deg)'        
-        // });
-    });
-
 
     //menu
-    $('.menu-accordeon__item_meat').on('click', function(e){
+
+    $('.menu-accordeon__item').on('click', function(e){
         e.preventDefault();
-        $('.menu-accordeon__item_meat').toggleClass('menu-accordeon__item_active');
+        $(this).toggleClass('active')
+            .siblings().removeClass('active');
     });
 
-    $('.menu-accordeon__item_vegan').on('click', function(e){
-        e.preventDefault();
-        $('.menu-accordeon__item_vegan').toggleClass('menu-accordeon__item_active');
-    });
+    //maps
 
-    $('.menu-accordeon__item_dieta').on('click', function(e){
-        e.preventDefault();
-        $('.menu-accordeon__item_dieta').toggleClass('menu-accordeon__item_active');
-    });
-
-
-    //maps 
     ymaps.ready(init);
     var myMap;
 
@@ -85,20 +67,6 @@ $(document).ready(function(){
         myMap.geoObjects.add(myCollection);
     }
 });
-
-
-// $('.menu-accordeon__item').on('click', function(e){
-//     e.preventDefault();
-//     $('.menu-accordeon__item').toggleClass('active')
-//         .siblings().removeClass('active');
-// });
-
-
-// $(document).ready(function() {
-// 	$('.main-content').fullpage();
-// });
-
-
 
 //one page scroll
 
@@ -151,7 +119,6 @@ const scrollToSection = direction => {
     }
 }
 
-
 $(document).on({
     wheel: e => {
         const deltaY = e.originalEvent.deltaY;
@@ -186,6 +153,7 @@ $(document).on({
 });
 
 //nav
+
 $('[data-scrool-to]').on('click', e =>{
     e.preventDefault();
 
@@ -194,8 +162,8 @@ $('[data-scrool-to]').on('click', e =>{
     performTransition(target);
 })
 
-
 //touch swipe
+
 if (isMobile) {
     $(document).swipe( {
         swipe:function(event, direction, distance, duration, fingerCount, fingerData) {
@@ -205,3 +173,67 @@ if (isMobile) {
         }
     });
 }
+
+//arrow-down
+
+$('.arrow-down').on('click', function(e){
+    e.preventDefault();
+    scrollToSection('down');
+});
+
+//php
+
+$('#order-form').on('submit', submitForm);
+
+function submitForm (ev) {
+    ev.preventDefault();
+
+    var form = $(ev.target),
+        data = form.serialize(),
+        url = form.attr('action'),
+        type = form.attr('method');
+
+    var request = $.ajax ({
+        type: type,        
+        url: url,       
+        dataType: 'JSON',
+        data: data              
+    });
+
+    request.done(function(msg) {
+        var mes = msg.mes,
+            status = msg.status;
+        
+        if (status === 'OK') {
+            form.append('<p class="success">' + mes + '</p>');
+        } else{
+            form.append('<p class="error">' + mes + '</p>');
+        }
+    });  
+
+    request.fail(function(jqXHR, textStatus) {
+        alert("Request failed: " + textStatus);
+    });
+};
+
+//fancybox
+
+$(".btn__reviews").on('click', function(e) {
+    e.preventDefault;
+
+    $.fancybox.open('Константин Спилберг: Мысли все о них и о них, о них и о них. Нельзя устоять, невозможно забыть...');  
+});
+
+// menu overlay
+var menuOverlay = $(".nav");
+var closeBtn = $(".btn__close");
+var hamburgerMenuBtn = $(".hamburger-menu__btn");
+
+$('.hamburger-menu').click(function (e) {
+    e.preventDefault();
+    $(this).toggleClass('hamburger-overlay');
+    menuOverlay.slideToggle();
+    closeBtn.slideToggle();
+    hamburgerMenuBtn.slideToggle();
+    // $(".hamburger-menu__btn").css("display", "none");
+});

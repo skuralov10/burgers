@@ -1,0 +1,21 @@
+.arrow-down {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.arrow-down__icon {
+  -webkit-transform: translate(0, rem(90px));
+  -ms-transform: translate(0, rem(90px));
+  transform: translate(0, rem(90px));
+  width: rem(29px);
+  height: rem(14px);
+  fill: #fff; }
+  .arrow-down__icon:hover {
+    -webkit-transform: translate(0, rem(95px));
+    -ms-transform: translate(0, rem(95px));
+    transform: translate(0, rem(95px)); }
+
+/*# sourceMappingURL=arrow-down.css.map */

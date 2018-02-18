@@ -1,20 +1,21 @@
 .btn {
-    padding: rem(6px) rem(14px);
-    background-color: $orange;
-    color: #fff;
-    text-decoration: none;
-    border-radius: rem(5px);
-    display: inline-block;
-    text-transform: uppercase;
-    font-family: 'ubuntumedium';
-    font-size: rem(13px);
-    font-weight: normal;
-    margin-right: rem(20px);
+  padding: rem(6px) rem(14px);
+  background-color: $orange;
+  color: #fff;
+  text-decoration: none;
+  border-radius: rem(5px);
+  display: inline-block;
+  text-transform: uppercase;
+  font-family: 'ubuntumedium';
+  font-size: rem(13px);
+  font-weight: normal;
+  margin-right: rem(20px);
+  border: 0;
 
-    &:hover {
-        background-color: $red;
-    }
+  &:hover {
+      background-color: $red;
   }
+}
 
 .btn__reset {
   color: #ffffff;
@@ -32,4 +33,36 @@
   &:hover {
     background-color: $orange;
   }
+}
+
+.btn__close {
+  display: none;
+  position: absolute;
+  right: rem(32px);
+  top: rem(32px);
+  width: rem(32px);
+  height: rem(32px);
+  opacity: 0.5;
+  z-index: 1;
+}
+
+.btn__close:hover {
+  opacity: 1;
+}
+
+.btn__close:before, .btn__close:after {
+  position: absolute;
+  left: rem(15px);
+  content: ' ';
+  height: rem(28px);
+  width: rem(2px);
+  background-color:#fff;
+}
+
+.btn__close:before {
+  transform: rotate(45deg);
+}
+
+.btn__close:after {
+  transform: rotate(-45deg);
 }
